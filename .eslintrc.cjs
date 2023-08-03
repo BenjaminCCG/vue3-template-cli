@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['alloy', 'alloy/vue', 'alloy/typescript','./.eslintrc-auto-import'],
+  extends: ['alloy', 'alloy/vue', 'alloy/typescript', './.eslintrc-auto-import'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: {
