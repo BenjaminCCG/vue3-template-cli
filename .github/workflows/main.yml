@@ -22,7 +22,7 @@ jobs:
         with:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: "root"
-          REMOTE_PASSWORD: ${{ secrets.REMOTE_PASSWORD }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_PORT: 22
           SOURCE: "vue3-template-cli/"
           TARGET: "/usr/share/nginx/html"
