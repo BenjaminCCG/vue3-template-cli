@@ -1,5 +1,5 @@
 <template>
-  <div>hello world,{{ userStore.name }}</div>
+  <div>hello world,{{ userStore.name }}测试</div>
 </template>
 
 <script setup lang="ts">
