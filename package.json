@@ -1,7 +1,9 @@
 {
-  "name": "vue3-template-cli",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vue3-template-cli-bgm",
+  "version": "0.0.2",
+  "bin": {
+    "v3-cli": "./bin/index.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -26,9 +28,15 @@
     }
   },
   "dependencies": {
+    "chalk": "4.0.0",
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
+    "download-git-repo": "^3.0.2",
+    "ora": "^5.0.1",
     "pinia": "^2.1.6",
     "postcss-preset-env": "^9.1.0",
     "prettier": "^3.0.0",
+    "prompts": "^2.4.2",
     "vue": "^3.3.4",
     "vue-router": "4",
     "windicss": "^3.5.6"
