@@ -1,8 +1,7 @@
 {
-  "name": "my-vue-cli",
+  "name": "vue3-template-cli",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
