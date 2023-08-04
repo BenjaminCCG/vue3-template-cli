@@ -15,6 +15,13 @@
 [github](https://github.com/BenjaminCCG/vue3-template-cli.git)
 [国内gitee](https://gitee.com/theGreatWallCCG/my-vue-cli)
 
+直接使用执行以下命令安装脚手架
+
+```js
+npm i vue3-template-cli-bgm -g
+v3-cli
+```
+
 ## 1.项目初始化
 
 ```js
