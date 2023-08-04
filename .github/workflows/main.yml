@@ -18,13 +18,13 @@ jobs:
           npm run build
 
       - name: copy dist fil with scp
-        uses: easingthemes/ssh-deploy@v4.1.8
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: "root"
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_PORT: 22
-          SOURCE: "vue3-template-cli/"
-          TARGET: "/usr/share/nginx/html"
-          ARGS: "-avzr --delete"
+          server: ${{ secrets.REMOTE_HOST }}
+          username: "root"
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: 22
+          local_path: "./vue3-template-cli/*"
+          remote_path: "/usr/share/nginx/html"
+          sftp_only: true
           
