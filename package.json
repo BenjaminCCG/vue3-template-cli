@@ -12,9 +12,12 @@
     "commit": "git-cz"
   },
   "lint-staged": {
-    "*.{vue,js,ts,jsx,tsx}": [
-      "pnpm lint",
-      "pnpm prettier"
+    "*.{js,vue,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{html,css,less,scss,md}": [
+      "prettier --write"
     ]
   },
   "config": {
